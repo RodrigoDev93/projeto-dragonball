@@ -1,0 +1,171 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
+@font-face {
+    font-family: 'dbz';
+    src:  url('../fontes/Saiyan-Sans.ttf') format(TrueType);
+    font-weight: normal;
+}
+
+:root {
+    --cor0:#03588C;
+    --cor1:#F2AE2E;
+    --cor2:#F27405;
+    --cor3:#F25C05;
+    --cor4:#BF2604;
+
+    --font-padrao: 'Montserrat Alternates';
+    --font-destaque: 'dbz' , sans-serif;
+}
+
+* {
+    margin:0px;
+    padding:0px;
+}
+
+body{
+    background-image:linear-gradient(to left, var(--cor3) , var(--cor4));
+}
+
+nav {
+    background-color: #03588C;
+    text-align: center;
+    padding:5px;
+}
+
+nav > a{
+    text-decoration:none;
+    color: var(--cor1);
+    padding:0px 10px;
+    font-family: var(--font-destaque);
+    font-size:2em;
+    border-radius:5px;
+    padding:10px;
+    transition-duration:.5s;
+}
+
+nav > a:hover{
+    background-color: var(--cor1);
+    color:var(--cor0);
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    background-color:#F2AE2E;
+    box-shadow:3px 5px 7px 1px rgba(0, 0, 0, 0.404);
+}
+.logo {
+    max-width:1000px;
+    min-width: 300px;
+}
+
+main {
+    background-color: var(--cor1);
+    margin:auto;
+    margin-top:20px;
+    min-width:300px;
+    max-width:1000px;
+    padding:20px;
+    box-shadow:3px 5px 7px 1px rgba(0, 0, 0, 0.418);
+    border-radius:10px 10px 0px 0px;
+}
+
+main > article > h1 {
+    font-family: var(--font-destaque);
+    background-color:var(--cor0);
+    margin:-20px -20px 7px -20px;
+    border-radius:10px 10px 0px 0px;
+    padding:5px 0px 5px 20px;
+    color:var(--cor1);
+    font-size:3em;
+    font-weight: normal;
+    text-align:center;
+}
+
+main strong{
+    color:var(--cor0);
+}
+
+a.akirawiki::after{
+    content: '\00A0\1F517'; 
+}
+
+p > a:hover{
+    text-decoration: underline;
+}
+
+p > a {
+    text-decoration: none;
+}
+
+main  p {
+    font-family: var(--font-padrao);
+    text-align: justify;
+    text-indent: 20px;
+    line-height: 1.5em;
+    font-size:1em;  
+    font-weight: bold;
+}
+
+main img.turma1{
+    width:100%;
+    padding:5px;
+}
+
+main img.turma2 {
+    width:100%;
+    padding:5px;
+}
+
+main img.nuvens {
+    width:100%;
+    padding:5px;
+}
+
+main img.kamihouse{
+    width:100%;
+    padding:5px;
+}
+
+aside h3 {
+    font-family: var(--font-destaque);
+    background-color:var(--cor0);
+    margin:-10px -10px 10px -10px;
+    border-radius:10px 10px 0px 0px;
+    padding:5px 0px 5px 10px;
+    color:var(--cor1);
+    font-size:2em;
+    font-weight: normal;
+    text-align:center;
+}
+
+aside > p {
+    font-weight: bold;
+}
+
+aside {
+    background-color:var(--cor3);
+    padding:10px;
+    border-radius:10px 10px 10px 10px;
+}
+
+aside img.akira{
+    width:100%;
+
+}
+
+footer {
+    background-color:var(--cor0);
+    padding:5px;
+    margin:20px 0px;
+}
+
+footer p {
+    color:white;
+    text-align: center;
+    font-family: var(--font-padrao);
+}
+
+footer >p >strong {
+    color: var(--cor1);
+}
